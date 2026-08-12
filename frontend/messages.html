@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages | JobFinder</title>
+    <link rel="stylesheet" href="messages.css">
+</head>
+
+<body>
+
+    <div class="messages-container">
+
+        <div class="messages-card">
+
+            <div class="page-header">
+                <div>
+                    <h1>Messages</h1>
+                    <p>Communicate with candidates and employers.</p>
+                </div>
+
+                <a href="dashboard.html" class="back-btn">
+                    ← Dashboard
+                </a>
+            </div>
+
+           <div class="message-box">
+
+    <h3>Send Message</h3>
+
+    <label>To</label>
+    <input type="text" id="receiver" value="Arun Kumar" readonly>
+
+    <label>Message</label>
+    <textarea id="messageText"
+              placeholder="Type your message..."></textarea>
+
+    <button onclick="sendMessage()">Send Message</button>
+
+    <p id="messageStatus"></p>
+
+</div>
+
+        </div>
+
+    </div>
+    <script>
+function sendMessage() {
+
+    const message = document.getElementById("messageText").value.trim();
+    const status = document.getElementById("messageStatus");
+
+    if (message === "") {
+        status.textContent = "Please enter a message.";
+        return;
+    }
+
+    status.textContent = "Message sent successfully!";
+
+    document.getElementById("messageText").value = "";
+}
+</script>
+
+</body>
+</html>

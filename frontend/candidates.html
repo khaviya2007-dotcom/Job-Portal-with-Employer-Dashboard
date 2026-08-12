@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Candidates | JobFinder</title>
+
+    <link rel="stylesheet" href="candidates.css">
+</head>
+
+<body>
+
+    <div class="candidates-container">
+
+        <div class="candidates-card">
+
+            <div class="page-header">
+                <div>
+                    <h1>Candidates</h1>
+                    <p>Find and manage job candidates.</p>
+                </div>
+
+                <a href="dashboard.html" class="back-btn">
+                    ← Dashboard
+                </a>
+            </div>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchCandidate"
+                    placeholder="Search candidates..."
+                >
+            </div>
+
+            <div id="candidateList">
+
+                <div class="candidate-card">
+                    <div class="candidate-avatar">AK</div>
+
+                    <div class="candidate-info">
+                        <h3>Arun Kumar</h3>
+                        <p>Frontend Developer</p>
+                        <span>Chennai</span>
+                    </div>
+
+                    <button class="view-btn"
+                     onclick="viewProfile('Arun Kumar')">
+                    View Profile
+                    </button>
+                </div>
+
+                <div class="candidate-card">
+                    <div class="candidate-avatar">PS</div>
+
+                    <div class="candidate-info">
+                        <h3>Priya Sharma</h3>
+                        <p>UI/UX Designer</p>
+                        <span>Bangalore</span>
+                    </div>
+
+                    <button class="view-btn">
+                        View Profile
+                    </button>
+                </div>
+
+                <div class="candidate-card">
+                    <div class="candidate-avatar">RK</div>
+
+                    <div class="candidate-info">
+                        <h3>Ravi Kumar</h3>
+                        <p>Backend Developer</p>
+                        <span>Chennai</span>
+                    </div>
+
+                    <button class="view-btn">
+                        View Profile
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="candidates.js"></script>
+
+</body>
+</html>
